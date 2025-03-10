@@ -1,19 +1,21 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import ProductList from "./components/ProductList";
-import Footer from "./components/Footer";
-import Category from "./components/Category";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home/Home";
+// import About from "./pages/About";
+import Contact from "./pages/Home/Contact";
+import Policies from "./pages/Home/Policies";
+import UserAccount from "./pages/Auth/UserAccount";
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Header />
-      <Hero />
-      <ProductList />
-      <Footer />
-      <Category />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/policies" element={<Policies />} />
+        <Route path="/useraccount" element={<UserAccount />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;

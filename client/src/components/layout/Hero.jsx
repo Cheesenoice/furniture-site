@@ -11,7 +11,7 @@ const Hero = () => {
       {/* Overlay để làm mờ ảnh, tạo độ tương phản cho text */}
       <div className="absolute inset-0 bg-black opacity-40"></div>
 
-      <div className="relative text-center text-white px-4">
+      <div className="relative text-center text-white px-4"> //
         <h2 className="text-3xl font-bold mb-4">
           Khám phá các sản phẩm mới nhất!
         </h2>
