@@ -6,27 +6,31 @@ const Header = () => {
         <nav>
           <ul className="flex space-x-6">
             <li>
-              <a href="#" className="hover:text-gray-500">
+              <a href="/" className="hover:text-gray-500">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-500">
+              <a href="/products" className="hover:text-gray-500">
                 Products
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-500">
-                About
+              <a href="/blog" className="hover:text-gray-500">
+                Blog
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-500">
+              <a href="/Contact" className="hover:text-gray-500">
                 Contact
               </a>
             </li>
+            <li>
+              <a href="/policies" className="hover:text-gray-500">
+                Policies
+              </a>
+            </li>
           </ul>
-          
         </nav>
       </div>
     </header>
